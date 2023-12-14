@@ -91,8 +91,8 @@
         <a href="index.jsp">
             <i class="fas fa-home"></i> Página Principal
         </a>
-        <a href="login.jsp">
-            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+        <a href="plantillaUsuario.jsp">
+            <i class="fas fa-sign-in-alt"></i> Ver Mi Cuenta
         </a>
     </div>
 </div>
