@@ -1,0 +1,837 @@
+/*--- BODY ---*/
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+.navbar {
+    background-image: linear-gradient(112.1deg, rgb(0, 0, 0) 11.4%, rgb(0, 2, 95) 75.2%);
+    color: rgb(255, 255, 255);
+}
+
+a.nav-link {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+
+a.nav-link::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(251, 255, 0), rgb(17, 0, 255));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+
+a.nav-link:hover:after {
+    width: 100%;
+}
+
+a.nav-link:hover {
+    text-shadow: 2px 2px rgba(255, 222, 73, 0.459), 4px 4px rgba(0, 2, 99, 0.651);
+    transform: scale(1.1, 1.1);
+    z-index: 7;
+}
+
+.carousel-item {
+    opacity: 90%;
+}
+
+
+.carousel-caption {
+    background-color: #0e135794;
+    font-family: 'Quicksand', sans-serif;
+    color: #faddcf;
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: center;
+    box-shadow:
+            0px 4px 20px rgba(255, 225, 91, 0.493), /* Primera sombra exterior */
+            0px 4px 20px rgb(255, 255, 255); /* Segunda sombra exterior */
+}
+
+
+
+.carousel-item p{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    margin-left: 15px;
+}
+
+.tarjetas {
+    padding: 35px;
+}
+
+.card {
+    font-family: 'Quicksand', sans-serif;
+    color: #faddcf;
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), box-shadow 0.3s ease, opacity 0.3s ease;
+    border-radius: 20px;
+    /* Aplicar sombras en gradiente */
+    box-shadow:
+            0px 4px 20px rgba(255, 255, 255, 0.493), /* Primera sombra exterior */
+            0px 4px 20px rgb(255, 196, 87); /* Segunda sombra exterior */
+
+    /* Agregar z-index para control de apilamiento */
+    z-index: 1;
+}
+
+.card:hover {
+    z-index: 2;
+    transform: translateY(-10px); /* Cambiar la posición vertical cuando se pasa el mouse */
+    box-shadow:
+            0px 8px 30px rgba(255, 255, 255, 0.493), /* Primera sombra exterior */
+            0px 8px 30px rgb(255, 196, 87); /* Segunda sombra exterior */
+}
+
+.card-img1 {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.349)), url('../Img/card4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-img2 {
+    background-image: linear-gradient(rgba(0, 0, 0), rgba(0, 0, 0, 0.349)), url('../Img/socio2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-img3 {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.349)), url('../Img/card5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card:hover {
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    box-shadow:
+            0px 4px 20px rgb(255, 166, 0), /* Primera sombra exterior */
+            0px 4px 20px rgb(0, 38, 255); /* Segunda sombra exterior */
+}
+
+.card-button {
+    border: 1px solid#ffffff9c;
+    box-shadow:
+            0px 4px 20px rgb(255, 255, 255), /* Primera sombra exterior */
+            0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
+}
+
+.card-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000a4;
+    box-shadow:
+            0px 4px 20px rgb(255, 255, 255), /* Primera sombra exterior */
+            0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
+}
+
+/* Estilos para los botones */
+.gradient-border-hover {
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.gradient-border-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(80deg, transparent, #ffd56259);
+    transition: width 4.0s ease;
+}
+
+.gradient-border-hover:hover::before {
+    width: 100%;
+}
+
+
+.bg-dark {
+    background-image: linear-gradient(
+            117.1deg,
+            rgb(0, 2, 95) 11.4%,
+            rgb(0, 0, 0) 75.2%
+    );
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icon {
+    color: #f7f6ee;
+}
+
+.social-icon-hover:hover {
+    color:#ffbb00;
+    transition: all 0.6s ease;
+}
+
+.map-frame {
+    height: 150px;
+}
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#video-bg {
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Escalar el video para cubrir el contenedor */
+}
+
+/* Estilos para el contenido encima del video */
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/*--- JUGADORES ---*/
+.slider {
+    border-radius: 70px;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+    width: calc(600px * 14); /* Aumenta el ancho total para más espacio */
+    gap: 150px;
+}
+
+.slider .slide {
+    width: 280px; /* Aumenta el ancho de cada diapositiva */
+}
+
+.slider .slide img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-310px * 7)); /* Ajusta el valor de acuerdo al ancho de las diapositivas y el espacio entre ellas */
+        transform: translateX(calc(-310px * 7));
+    }
+}
+
+.slider2 {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider2 .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+    width: calc(600px * 14); /* Aumenta el ancho total para más espacio */
+}
+
+
+.slider2 .slide img {
+    height: 200px; /* Mantiene la proporción de la imagen */
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-310px * 7)); /* Ajusta el valor de acuerdo al ancho de las diapositivas y el espacio entre ellas */
+        transform: translateX(calc(-310px * 7));
+    }
+}
+
+
+.general {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 20px;
+
+}
+
+.general h2 {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.tablas th {
+    color: #ffffff;
+    background-color: #020202;
+    font-weight: bold;
+    border: 1px solid rgb(65, 65, 65);
+    padding: 8px;
+}
+
+/* Estilo para las filas pares */
+.tablas tr:nth-child(even) {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* Estilo para las filas impares */
+.tablas tr:nth-child(odd) {
+    color: #ffffff;
+    background-color: #353535;
+}
+
+/* Estilo para las celdas */
+.tablas td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+    box-shadow:
+            0px 0px 2px rgb(255, 255, 255), /* Primera sombra exterior */
+            0px 4px 20px rgba(0, 0, 0, 0.938); /* Segunda sombra exterior */
+}
+
+/* Estilo para el hover en las filas */
+.tablas table tr:hover {
+    background-color: #99999998;
+}
+
+/* Estilo para el hover en las celdas */
+.tablas table tr:hover td {
+    background-color: #000877;
+    color: #ffc400;
+}
+
+
+/* Estilos para el tablero realista */
+.container-hs {
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#headline {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.countdown {
+    box-shadow:
+            0px 4px 20px rgb(255, 166, 0), /* Primera sombra exterior */
+            0px 4px 20px rgb(0, 38, 255); /* Segunda sombra exterior */
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    color: #f5c557;
+    background-color: #0000007c;
+}
+
+.countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown span {
+    padding: 5px 10px;
+}
+
+.team {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team img {
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.team p {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    font-size: 18px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.vs {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1em;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+
+.mid2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Puedes ajustar esto según tus necesidades */
+}
+
+
+.form-container {
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 20px;
+    color: #faddcf;
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px auto; /* Agregar margen alrededor del formulario y centrarlo horizontalmente */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Añadir un margen vertical */
+    justify-content: center;
+    align-items: center;
+    min-height: 80%; /* Establecer un alto mínimo para el formulario */
+    box-shadow:
+            0px 4px 20px rgba(255, 255, 255, 0.493), /* Primera sombra exterior */
+            0px 4px 20px rgb(255, 196, 87); /* Segunda sombra exterior */
+    margin-right: 10px; /* Espacio entre los divs */
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#categoria option{
+    background-color: rgba(0, 0, 126, 0.89);
+    color: rgb(255, 196, 0);
+}
+
+input::placeholder,
+select::placeholder {
+    color: #bbb;
+}
+
+input:focus,
+select:focus {
+    border-color: #ffbb00;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    background-color: #120fa8;
+    color: rgb(255, 187, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid#ffffff9c;
+    box-shadow:
+            0px 4px 20px rgb(255, 255, 255), /* Primera sombra exterior */
+            0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
+}
+
+.form-buttons button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000a4;
+    box-shadow:
+            0px 4px 20px rgb(255, 255, 255), /* Primera sombra exterior */
+            0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
+}
+
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+#num-socio:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+
+table {
+    color: #ffffff;
+    background-color: #0007634d;
+    margin-top: 30px;
+
+}
+
+/* Estilos para la tabla de precios */
+.price-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.price-table th,
+.price-table td {
+    border: 1px solid #00000004;
+    text-align: center;
+}
+
+.price-table th {
+    background-color: #000000;
+    color: #ffbb00;
+}
+
+.tabla-entradas {
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 20px;
+    color: #faddcf;
+    letter-spacing: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px auto; /* Agregar margen alrededor del formulario y centrarlo horizontalmente */
+    padding: 20px;
+    max-width: calc(50% - 10px); /* El 10px es el espacio entre los divs */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Añadir un margen vertical */
+    justify-content: center;
+    align-items: center;
+    min-height: 80%; /* Establecer un alto mínimo para el formulario */
+    box-shadow:
+            0px 4px 20px rgba(255, 255, 255, 0.493), /* Primera sombra exterior */
+            0px 4px 20px rgb(255, 196, 87); /* Segunda sombra exterior */
+}
+
+.tabla-entradas th,
+.tabla-entradas td {
+    text-align: center;
+}
+
+.tabla-entradas th {
+    padding: 15px;
+    background-color: #000000;
+    color: #ffbb00;
+    text-align: center;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal-contenido {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+    letter-spacing: 5px;
+    font-size: 1em;
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    box-shadow:
+            0px 4px 20px rgba(255, 225, 91, 0.493), /* Primera sombra exterior */
+            0px 4px 20px rgb(255, 255, 255); /* Segunda sombra exterior */
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.cerrar-modal {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar-modal:hover {
+    color: #000;
+}
+
+/* Estilos para dispositivos más pequeños */
+@media screen and (max-width: 991px) {
+    /* Aquí puedes agregar tus estilos específicos para móviles */
+
+    body {
+        font-size: 8px; /* Cambia el tamaño de fuente para dispositivos móviles */
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-icon,
+    .bg-dark p,
+    .bg-dark h4,
+    .general h2,
+    .tablas {
+        font-size: 8px; /* Reducir el tamaño de fuente para los elementos */
+    }
+
+    .card {
+        border: none;
+        align-items: center;
+        display: flex;
+        background-color: #00000000;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .card p,
+    .card-title {
+        display: none;
+    }
+
+    .card-img1,
+    .card-img2,
+    .card-img3{
+        background-image: none;
+    }
+
+    .bg-dark {
+        text-align: center;
+    }
+
+    .social-icon-hover:hover {
+        color:#ffbb00;
+        transition: all 0.6s ease;
+    }
+
+    .map-frame {
+        height: 80px;
+        width: 160px;
+        padding-bottom: 15px;
+    }
+
+    .general {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider {
+        width: 100vw;
+    }
+
+    .mid2 {
+        flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
+        align-items: center;
+    }
+
+    .form-container {
+        margin: 0; /* Eliminar el margen en dispositivos más pequeños */
+        padding: 10px; /* Reducir el espacio entre los elementos */
+        border-radius: 0; /* Eliminar el redondeo del borde */
+
+    }
+
+    .tabla-entradas {
+        text-align: center;
+        max-width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+
+    }
+
+
+}
+
+@media screen and (max-width: 430px) {
+    /* Aquí puedes agregar tus estilos específicos para móviles */
+
+    body {
+        font-size: 6px; /* Cambia el tamaño de fuente para dispositivos móviles */
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-icon,
+    .bg-dark p,
+    .bg-dark h4,
+    .general h2,
+    .tablas {
+        font-size: 6px; /* Reducir el tamaño de fuente para los elementos */
+    }
+
+    .card {
+        border: none;
+        align-items: center;
+        display: flex;
+        background-color: #00000000;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .card p,
+    .card-title {
+        display: none;
+    }
+
+    .card-img1,
+    .card-img2,
+    .card-img3{
+        background-image: none;
+    }
+
+    .bg-dark {
+        text-align: center;
+    }
+
+    .social-icon-hover:hover {
+        color:#ffbb00;
+        transition: all 0.6s ease;
+    }
+
+    .map-frame {
+        height: 80px;
+        width: 160px;
+        padding-bottom: 15px;
+    }
+
+    .general {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .mid2 {
+        flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
+    }
+
+    .form-container {
+        margin: 0; /* Eliminar el margen en dispositivos más pequeños */
+        padding: 10px; /* Reducir el espacio entre los elementos */
+        border-radius: 0; /* Eliminar el redondeo del borde */
+    }
+
+    .tabla-entradas {
+        text-align: center;
+        max-width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+
+    }
+
+
+
+
+
+
+}

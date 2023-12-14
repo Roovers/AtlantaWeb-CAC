@@ -1,0 +1,290 @@
+/*--- BODY ---*/
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+.navbar {
+    background-image: linear-gradient(112.1deg, rgb(0, 0, 0) 11.4%, rgb(0, 2, 95) 75.2%);
+    color: rgb(255, 255, 255);
+}
+
+a.nav-link {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+    letter-spacing: 5px;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+a.nav-link::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(251, 255, 0), rgb(17, 0, 255));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+
+a.nav-link:hover:after {
+    width: 100%;
+}
+
+a.nav-link:hover {
+    text-shadow: 2px 2px rgba(255, 222, 73, 0.459), 4px 4px rgba(0, 2, 99, 0.651);
+    transform: scale(1.1, 1.1);
+    z-index: 7;
+}
+
+.bg-dark {
+    background-image: linear-gradient(
+            117.1deg,
+            rgb(0, 2, 95) 11.4%,
+            rgb(0, 0, 0) 75.2%
+    );
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icon {
+    color: #f7f6ee;
+}
+
+.social-icon-hover:hover {
+    color:#ffbb00;
+    transition: all 0.6s ease;
+}
+
+.map-frame {
+    height: 150px;
+}
+
+.video-container {
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#exito {
+    margin-top: 35px;
+    border: 1px solid#ffffff9c;
+    box-shadow:
+            0px 4px 20px rgb(255, 255, 255), /* Primera sombra exterior */
+            0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: green;
+}
+
+.form-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.form-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #120fa8;
+    color: rgb(255, 187, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #ffffff9c;
+    box-shadow:
+            0px 4px 20px rgb(255, 255, 255), /* Primera sombra exterior */
+            0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
+}
+
+.form-links a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000a4;
+    box-shadow:
+            0px 4px 20px rgb(255, 255, 255), /* Primera sombra exterior */
+            0px 4px 20px rgb(25, 0, 255); /* Segunda sombra exterior */
+}
+
+
+/* Estilos para dispositivos más pequeños */
+@media screen and (max-width: 991px) {
+    /* Aquí puedes agregar tus estilos específicos para móviles */
+
+    body {
+        font-size: 8px; /* Cambia el tamaño de fuente para dispositivos móviles */
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-icon,
+    .bg-dark p,
+    .bg-dark h4,
+    .general h2,
+    .tablas {
+        font-size: 8px; /* Reducir el tamaño de fuente para los elementos */
+    }
+
+    .card {
+        border: none;
+        align-items: center;
+        display: flex;
+        background-color: #00000000;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .card p,
+    .card-title {
+        display: none;
+    }
+
+    .card-img1,
+    .card-img2,
+    .card-img3{
+        background-image: none;
+    }
+
+    .bg-dark {
+        text-align: center;
+    }
+
+    .social-icon-hover:hover {
+        color:#ffbb00;
+        transition: all 0.6s ease;
+    }
+
+    .map-frame {
+        height: 80px;
+        width: 160px;
+        padding-bottom: 15px;
+    }
+
+    .general {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider {
+        width: 100vw;
+    }
+
+    .mid2 {
+        flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
+        align-items: center;
+    }
+
+    .form-container {
+        margin: 0; /* Eliminar el margen en dispositivos más pequeños */
+        padding: 10px; /* Reducir el espacio entre los elementos */
+        border-radius: 0; /* Eliminar el redondeo del borde */
+
+    }
+
+    .tabla-entradas {
+        text-align: center;
+        max-width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+
+    }
+
+
+}
+
+@media screen and (max-width: 430px) {
+    /* Aquí puedes agregar tus estilos específicos para móviles */
+
+    body {
+        font-size: 6px; /* Cambia el tamaño de fuente para dispositivos móviles */
+        margin: 0;
+        padding: 0;
+    }
+
+    .social-icon,
+    .bg-dark p,
+    .bg-dark h4,
+    .general h2,
+    .tablas {
+        font-size: 6px; /* Reducir el tamaño de fuente para los elementos */
+    }
+
+    .card {
+        border: none;
+        align-items: center;
+        display: flex;
+        background-color: #00000000;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .card p,
+    .card-title {
+        display: none;
+    }
+
+    .card-img1,
+    .card-img2,
+    .card-img3{
+        background-image: none;
+    }
+
+    .bg-dark {
+        text-align: center;
+    }
+
+    .social-icon-hover:hover {
+        color:#ffbb00;
+        transition: all 0.6s ease;
+    }
+
+    .map-frame {
+        height: 80px;
+        width: 160px;
+        padding-bottom: 15px;
+    }
+
+    .general {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .mid2 {
+        flex-direction: column; /* Cambiar la dirección de los elementos en dispositivos más pequeños */
+    }
+
+    .form-container {
+        margin: 0; /* Eliminar el margen en dispositivos más pequeños */
+        padding: 10px; /* Reducir el espacio entre los elementos */
+        border-radius: 0; /* Eliminar el redondeo del borde */
+    }
+
+    .tabla-entradas {
+        text-align: center;
+        max-width: 100%; /* Establecer el ancho máximo al 100% del contenedor */
+
+    }
+
+}
